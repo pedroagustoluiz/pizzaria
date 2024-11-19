@@ -11,7 +11,12 @@ header nav ul {
   gap: 0.5rem;
   list-style: none;
 }
-header nav ul li:hover {
+header nav ul li a {
+  text-decoration: none;
+  color: #fea403;
+  padding: 1rem;
+}
+header nav ul li a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
