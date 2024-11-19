@@ -1,0 +1,31 @@
+@use "../colors";
+.menu__content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  h1 {
+    font-size: 2.5rem;
+  }
+  .menu__options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .menu__card {
+    background-color: colors.$color-card;
+    border-radius: 1rem;
+    max-width: 30rem;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .menu__card img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    h1 {
+      margin: 2rem 0;
+    }
+  }
+}

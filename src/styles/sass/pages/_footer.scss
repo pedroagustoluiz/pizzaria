@@ -1,0 +1,93 @@
+@use "../colors";
+footer {
+  .contact__title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .footer__img {
+    margin: 4rem 0rem;
+    background: url("../../assets/img/footer.jpg"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    color: colors.$color-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+  .footer__contact {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    ul {
+      max-width: 50%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 0.3rem);
+      gap: 1rem;
+      margin: 0 auto;
+      list-style-type: none;
+      font-style: italic;
+      .contact__address {
+        grid-column: 1;
+        grid-row: span 2;
+        margin-bottom: 1rem;
+      }
+      .contact__phone {
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 1rem;
+      }
+      .contact__email {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .contact__time {
+        grid-column: 3;
+        grid-row: span 2;
+      }
+      li {
+        .bold {
+          font-weight: 700;
+        }
+        .orange {
+          color: colors.$color-button;
+        }
+      }
+    }
+    .contact__btn {
+      margin-top: 1rem;
+      background-color: colors.$color-button;
+      color: black;
+      font-weight: 700;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      &:hover {
+        background-color: #ffcc00;
+      }
+    }
+  }
+  .footer__end {
+    background-color: colors.$color-primary;
+    color: colors.$color-button;
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+  }
+}

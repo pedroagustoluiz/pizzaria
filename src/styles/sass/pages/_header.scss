@@ -1,0 +1,23 @@
+@use "../colors";
+header {
+  background-color: colors.$color-primary;
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 1.3rem;
+      color: colors.$color-button;
+      gap: 0.5rem;
+      list-style: none;
+
+      li {
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
